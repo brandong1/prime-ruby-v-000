@@ -15,3 +15,5 @@ def prime?(number)
     end
 end
 
+# Got the tests to pass with the follow error:
+# 0 examples, 0 failures, 1 error occurred outside of examples
