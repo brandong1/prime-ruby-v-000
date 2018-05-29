@@ -8,9 +8,10 @@ def prime?(number)
         (2..max).any? do |i| 
             if number % i == 0 
               return false 
-              end
+              
         end
 
         true
     end
 end
+
