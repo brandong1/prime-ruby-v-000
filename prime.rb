@@ -1,11 +1,16 @@
-def prime?(prime)
-    prime = true
-    for r in 2..Math.sqrt(self).to_i
-      if (self % r == 0)
-        prime = false
-        break
-      end
-  
-    return prime
-  end
+def prime?(number)
+        if number == 1 
+          return false 
+        end        
+
+        max = Math.sqrt(number)
+
+        (2..max).any? do |i| 
+            if number % i == 0 
+              return false 
+            end
+        end
+
+        true
+    end
 end
